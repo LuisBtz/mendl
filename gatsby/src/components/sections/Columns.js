@@ -131,7 +131,7 @@ const Columns = () => {
                         <div className='item second'>
                             <img src='./images/002.png' alt='Mendl' />
                         </div>
-                        <button className='item third'>
+                        <button className='item third' onClick={() => setMenu(!menu)}>
                             <img src='./images/003.png' alt='Mendl' />
                         </button>
                         <div className='item fourth'>
@@ -160,9 +160,9 @@ const Columns = () => {
                         <div className='item second'>
                             <img src='./images/011.png' alt='Mendl' />
                         </div>
-                        <div className='item third'>
+                        <button className='item third' onClick={() => setMapa(!mapa)}>
                             <img src='./images/012.jpg' alt='Mendl' />
-                        </div>
+                        </button>
                         <div className='item fourth'>
                             <img src='./images/013.png' alt='Mendl' />
                         </div>
