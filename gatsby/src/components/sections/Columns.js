@@ -297,7 +297,7 @@ z-index: 20;
             background-color: rgba(48, 83, 144, 1);
             padding: 20px;
             max-width: 1050px;
-            width: 100%;
+            width: 95%;
             button {
                 margin-top: 40px;
                 margin-bottom: 20px;
