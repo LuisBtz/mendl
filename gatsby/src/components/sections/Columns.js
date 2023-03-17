@@ -106,8 +106,14 @@ const Columns = () => {
                         <div className='item first poster'>
                             <img src='./images/001.png' alt='Mendl' />
                         </div>
+                        <div className='item first '>
+                            <img src='./images/a.jpeg' alt='Mendl' />
+                        </div>
                         <div className='item second poster'>
                             <img src='./images/002.png' alt='Mendl' />
+                        </div>
+                        <div className='item second '>
+                            <img src='./images/b.jpeg' alt='Mendl' />
                         </div>
                         <button className='item third poster' onClick={() => setMenu(!menu)}>
                             <img src='./images/003.png' alt='Mendl' />
@@ -121,6 +127,9 @@ const Columns = () => {
                         <div className='item first poster'>
                             <img src='./images/005.png' alt='Mendl' />
                         </div>
+                        <div className='item first'>
+                            <img src='./images/c.jpeg' alt='Mendl' />
+                        </div>
                         <div className='item poster'>
                             <img src='./images/006.png' alt='Mendl' />
                         </div>
@@ -130,6 +139,9 @@ const Columns = () => {
                         
                         <div className='item poster'>
                             <img src='./images/008.png' alt='Mendl' />
+                        </div>
+                        <div className='item'>
+                            <img src='./images/d.jpeg' alt='Mendl' />
                         </div>
                         <div className='item img poster'>
                             <img src='./images/009.png' alt='Mendl' />
@@ -151,6 +163,9 @@ const Columns = () => {
                         </button>
 
                         
+                        <div className='item fifth'>
+                            <img src='./images/e.jpeg' alt='Mendl' />
+                        </div>
                         <div className='item fifth poster'>
                             <img src='./images/014.png' alt='Mendl' />
                         </div>
@@ -168,8 +183,14 @@ const Columns = () => {
                         <div className='item first'>
                             <img src='./images/001.png' alt='Mendl' />
                         </div>
+                        <div className='item first '>
+                            <img src='./images/a.jpeg' alt='Mendl' />
+                        </div>
                         <div className='item second'>
                             <img src='./images/002.png' alt='Mendl' />
+                        </div>
+                        <div className='item second '>
+                            <img src='./images/b.jpeg' alt='Mendl' />
                         </div>
                         <button className='item third' onClick={() => setMenu(!menu)}>
                             <img src='./images/003.png' alt='Mendl' />
@@ -179,6 +200,9 @@ const Columns = () => {
                         </div>
                         <div className='item first'>
                             <img src='./images/005.png' alt='Mendl' />
+                        </div>
+                        <div className='item first'>
+                            <img src='./images/c.jpeg' alt='Mendl' />
                         </div>
                         <div className='item '>
                             <img src='./images/006.png' alt='Mendl' />
@@ -190,6 +214,9 @@ const Columns = () => {
                     <Slider className='column ' {...settingsArriba}>
                     <div className='item '>
                             <img src='./images/008.png' alt='Mendl' />
+                        </div>
+                        <div className='item'>
+                            <img src='./images/d.jpeg' alt='Mendl' />
                         </div>
                         <div className='item img'>
                             <img src='./images/009.png' alt='Mendl' />
@@ -206,6 +233,9 @@ const Columns = () => {
                         <button className='item third poster' onClick={() => setMapa(!mapa)}>
                             <img src='./images/013.png' alt='Mendl' />
                         </button>
+                        <div className='item fifth'>
+                            <img src='./images/e.jpeg' alt='Mendl' />
+                        </div>
                         <div className='item fifth img'>
                             <img src='./images/014.jpeg' alt='Mendl' />
                         </div>
