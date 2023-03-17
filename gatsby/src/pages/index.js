@@ -21,7 +21,7 @@ const Contenedor = styled.section`
 `
 
 export const Head = () => (
-  <Seo title='Mendl Project' description='Full website soon' image='/screenshot.png' />
+  <Seo title='Mendl Delicatessen' description='deli judío clásico' image='/screenshot.png' />
   )
 
 

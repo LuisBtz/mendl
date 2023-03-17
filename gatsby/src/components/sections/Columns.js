@@ -139,9 +139,9 @@ const Columns = () => {
                         <div className='item first'>
                             <img src='./images/010.jpeg' alt='Mendl' />
                         </div>
-                        <div className='item second poster'>
+                        {/* <div className='item second poster'>
                             <img src='./images/011.png' alt='Mendl' />
-                        </div>
+                        </div> */}
                         <div className='item fourth poster'>
                             <img src='./images/012.png' alt='Mendl' />
                         </div>
@@ -197,9 +197,9 @@ const Columns = () => {
                         <div className='item first'>
                             <img src='./images/010.jpeg' alt='Mendl' />
                         </div>
-                        <div className='item second'>
+                        {/* <div className='item second'>
                             <img src='./images/011.png' alt='Mendl' />
-                        </div>
+                        </div> */}
                         <div className='item fourth poster'>
                             <img src='./images/012.png' alt='Mendl' />
                         </div>
