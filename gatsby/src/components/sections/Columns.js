@@ -8,13 +8,28 @@ import { StaticImage } from "gatsby-plugin-image"
 const Columns = () => {
 
     const [menu, setMenu] = useState(false);
+    const [menuEn, setMenuEn] = useState(false);
+
     const [mapa, setMapa] = useState(false);
 
     const map = `<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.0522948942516!2d-99.17579937109213!3d19.410146344987346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fff467584079%3A0x5f5782a1e1db88a1!2sMendl%20Delicatessen!5e0!3m2!1ses!2smx!4v1678472715378!5m2!1ses!2smx" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`
 
-    const settings = {
+    const settingsArriba = {
         slidesToShow: 1,
         slidesToScroll: 1,
+        autoplay: true,
+        arrows: false,
+        autoplaySpeed: 0,
+        speed: 12000,
+        pauseOnHover: false,
+        cssEase: 'linear',
+        vertical: true,
+        draggable: true
+      };
+
+    const settingsAbajo = {
+        slidesToShow: 1,
+        slidesToScroll: -1,
         autoplay: true,
         arrows: false,
         autoplaySpeed: 0,
@@ -34,13 +49,31 @@ const Columns = () => {
                     <div className='container'>
                         <div className='image'>
                             <StaticImage
-                                src="../../assets/images/menu.jpg"
+                                src="../../assets/images/menuEs.png"
                                 alt="Menu Mendl"
                                 layout="fullWidth"
                                 style={{ height: "100%", width: "100%" }}
                             />
                         </div>
                         <button onClick={() => setMenu(!menu)}>CERRAR</button>
+                    </div>
+                    
+                </div>
+                :
+                ''
+            }
+                {menuEn ? 
+                <div className='menu'>
+                    <div className='container'>
+                        <div className='image'>
+                            <StaticImage
+                                src="../../assets/images/menuEn.png"
+                                alt="Menu Mendl"
+                                layout="fullWidth"
+                                style={{ height: "100%", width: "100%" }}
+                            />
+                        </div>
+                        <button onClick={() => setMenuEn(!menuEn)}>CERRAR</button>
                     </div>
                     
                 </div>
@@ -66,67 +99,74 @@ const Columns = () => {
             </Sections>
             <ColumnsContainer>
                 <div className='desktop'>
-                    <Slider className='column uno' {...settings}>
-                        <div className='item first'>
+                    <Slider className='column uno' {...settingsAbajo}>
+                        <div className='item first img'>
                             <img src='./images/000.jpeg' alt='Mendl' />
                         </div>
-                        <div className='item first'>
-                            <img src='./images/001.jpg' alt='Mendl' />
+                        <div className='item first poster'>
+                            <img src='./images/001.png' alt='Mendl' />
                         </div>
-                        <div className='item second'>
+                        <div className='item second poster'>
                             <img src='./images/002.png' alt='Mendl' />
                         </div>
-                        <button className='item third' onClick={() => setMenu(!menu)}>
+                        <button className='item third poster' onClick={() => setMenu(!menu)}>
                             <img src='./images/003.png' alt='Mendl' />
                         </button>
-                        <div className='item fourth'>
+                        <div className='item fourth img'>
                             <img src='./images/004.jpeg' alt='Mendl' />
                         </div>
 
                     </Slider>
-                    <Slider className='column ' {...settings}>
-                        <div className='item first'>
-                            <img src='./images/005.jpg' alt='Mendl' />
+                    <Slider className='column ' {...settingsArriba}>
+                        <div className='item first poster'>
+                            <img src='./images/005.png' alt='Mendl' />
                         </div>
-                        <div className='item '>
+                        <div className='item poster'>
                             <img src='./images/006.png' alt='Mendl' />
                         </div>
-                        <div className='item '>
-                            <img src='./images/007.jpg' alt='Mendl' />
+                        <button className='item third poster' onClick={() => setMenuEn(!menuEn)}>
+                            <img src='./images/007.png' alt='Mendl' />
+                        </button>
+                        
+                        <div className='item poster'>
+                            <img src='./images/008.png' alt='Mendl' />
                         </div>
-                        <div className='item '>
-                            <img src='./images/008.jpg' alt='Mendl' />
-                        </div>
-                        <div className='item '>
-                            <img src='./images/009.jpeg' alt='Mendl' />
+                        <div className='item img poster'>
+                            <img src='./images/009.png' alt='Mendl' />
                         </div>
                     </Slider>
-                    <Slider className='column tres' {...settings}>
+                    <Slider className='column tres' {...settingsAbajo}>
                         <div className='item first'>
-                            <img src='./images/010.jpg' alt='Mendl' />
+                            <img src='./images/010.jpeg' alt='Mendl' />
                         </div>
-                        <div className='item second'>
+                        <div className='item second poster'>
                             <img src='./images/011.png' alt='Mendl' />
                         </div>
-                        <button className='item third' onClick={() => setMapa(!mapa)}>
-                            <img src='./images/012.jpg' alt='Mendl' />
-                        </button>
-                        <div className='item fourth'>
-                            <img src='./images/013.png' alt='Mendl' />
+                        <div className='item fourth poster'>
+                            <img src='./images/012.png' alt='Mendl' />
                         </div>
-                        <div className='item fifth'>
-                            <img src='./images/014.jpeg' alt='Mendl' />
+
+                        <button className='item third poster' onClick={() => setMapa(!mapa)}>
+                            <img src='./images/013.png' alt='Mendl' />
+                        </button>
+
+                        
+                        <div className='item fifth poster'>
+                            <img src='./images/014.png' alt='Mendl' />
+                        </div>
+                        <div className='item fifth img'>
+                            <img src='./images/015.jpeg' alt='Mendl' />
                         </div>
                     </Slider>
                 </div>
                 
                 <div className='movil'>
-                    <Slider className='column uno' {...settings}>
-                        <div className='item first'>
+                    <Slider className='column uno' {...settingsAbajo}>
+                    <div className='item first img'>
                             <img src='./images/000.jpeg' alt='Mendl' />
                         </div>
                         <div className='item first'>
-                            <img src='./images/001.jpg' alt='Mendl' />
+                            <img src='./images/001.png' alt='Mendl' />
                         </div>
                         <div className='item second'>
                             <img src='./images/002.png' alt='Mendl' />
@@ -134,40 +174,43 @@ const Columns = () => {
                         <button className='item third' onClick={() => setMenu(!menu)}>
                             <img src='./images/003.png' alt='Mendl' />
                         </button>
-                        <div className='item fourth'>
+                        <div className='item fourth img'>
                             <img src='./images/004.jpeg' alt='Mendl' />
                         </div>
                         <div className='item first'>
-                            <img src='./images/005.jpg' alt='Mendl' />
+                            <img src='./images/005.png' alt='Mendl' />
                         </div>
                         <div className='item '>
                             <img src='./images/006.png' alt='Mendl' />
                         </div>
-                        <div className='item '>
-                            <img src='./images/007.jpg' alt='Mendl' />
-                        </div>
+                        <button className='item third poster' onClick={() => setMenuEn(!menuEn)}>
+                            <img src='./images/007.png' alt='Mendl' />
+                        </button>
                     </Slider>
-                    <Slider className='column ' {...settings}>
-                        <div className='item '>
-                            <img src='./images/008.jpg' alt='Mendl' />
+                    <Slider className='column ' {...settingsArriba}>
+                    <div className='item '>
+                            <img src='./images/008.png' alt='Mendl' />
                         </div>
-                        <div className='item '>
-                            <img src='./images/009.jpeg' alt='Mendl' />
+                        <div className='item img'>
+                            <img src='./images/009.png' alt='Mendl' />
                         </div>
                         <div className='item first'>
-                            <img src='./images/010.jpg' alt='Mendl' />
+                            <img src='./images/010.jpeg' alt='Mendl' />
                         </div>
                         <div className='item second'>
                             <img src='./images/011.png' alt='Mendl' />
                         </div>
-                        <button className='item third' onClick={() => setMapa(!mapa)}>
-                            <img src='./images/012.jpg' alt='Mendl' />
-                        </button>
-                        <div className='item fourth'>
-                            <img src='./images/013.png' alt='Mendl' />
+                        <div className='item fourth poster'>
+                            <img src='./images/012.png' alt='Mendl' />
                         </div>
-                        <div className='item fifth'>
+                        <button className='item third poster' onClick={() => setMapa(!mapa)}>
+                            <img src='./images/013.png' alt='Mendl' />
+                        </button>
+                        <div className='item fifth img'>
                             <img src='./images/014.jpeg' alt='Mendl' />
+                        </div>
+                        <div className='item fifth img'>
+                            <img src='./images/015.jpeg' alt='Mendl' />
                         </div>
                     </Slider>
                 </div>
@@ -296,14 +339,23 @@ const ColumnsContainer = styled.div`
         .column {
             width: 100%;
             height: 100%;
+            .img {
+                img {
+                }
+            }
+            .poster {
+                    img {
+                        max-width: 240px;
+                    }
+                }
             .item {
                 margin-bottom: 300px;
+                
             }
             .item.first, .item.second {
                 display: flex !important;
                 justify-content: flex-end;
                 img {
-                    width: 80%;
 
                 }
             }
@@ -311,7 +363,6 @@ const ColumnsContainer = styled.div`
                 display: flex !important;
                 justify-content: flex-start;
                 img {
-                    width: 80%;
 
                 }
             }
@@ -351,6 +402,8 @@ const ColumnsContainer = styled.div`
             .column {
                 .item {
                     margin-bottom: 150px;
+                    img {
+                    }
                 }
                 .item.first, .item.second {
                     display: flex !important;

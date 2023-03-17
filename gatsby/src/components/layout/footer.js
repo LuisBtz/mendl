@@ -18,7 +18,7 @@ const FooterContainer = styled.footer`
     .container {
         position: fixed;
         bottom: 50px;
-        width: 300px;
+        width: 240px;
         margin: 0 auto;
         left: 50%;
         transform: translateX(-50%);
