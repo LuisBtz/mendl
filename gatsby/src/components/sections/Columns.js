@@ -100,13 +100,13 @@ const Columns = () => {
             <ColumnsContainer>
                 <div className='desktop'>
                     <Slider className='column uno' {...settingsAbajo}>
-                        <div className='item first img'>
+                        <div className='item first img min-mid'>
                             <img src='./images/000.jpeg' alt='Mendl' />
                         </div>
                         <div className='item first poster'>
                             <img src='./images/001.png' alt='Mendl' />
                         </div>
-                        <div className='item first '>
+                        <div className='item first min'>
                             <img src='./images/a.jpeg' alt='Mendl' />
                         </div>
                         <div className='item second poster'>
@@ -118,7 +118,7 @@ const Columns = () => {
                         <button className='item third poster' onClick={() => setMenu(!menu)}>
                             <img src='./images/003.png' alt='Mendl' />
                         </button>
-                        <div className='item fourth img'>
+                        <div className='item fourth img min'>
                             <img src='./images/004.jpeg' alt='Mendl' />
                         </div>
 
@@ -127,20 +127,20 @@ const Columns = () => {
                         <div className='item first poster'>
                             <img src='./images/005.png' alt='Mendl' />
                         </div>
-                        <div className='item first'>
+                        <div className='item first min-mid'>
                             <img src='./images/c.jpeg' alt='Mendl' />
                         </div>
-                        <div className='item poster'>
+                        <div className='item poster min'>
                             <img src='./images/006.png' alt='Mendl' />
                         </div>
                         <button className='item third poster' onClick={() => setMenuEn(!menuEn)}>
                             <img src='./images/007.png' alt='Mendl' />
                         </button>
                         
-                        <div className='item poster'>
+                        <div className='item poster min-mid'>
                             <img src='./images/008.png' alt='Mendl' />
                         </div>
-                        <div className='item'>
+                        <div className='item min-mid'>
                             <img src='./images/d.jpeg' alt='Mendl' />
                         </div>
                         <div className='item img poster'>
@@ -148,13 +148,13 @@ const Columns = () => {
                         </div>
                     </Slider>
                     <Slider className='column tres' {...settingsAbajo}>
-                        <div className='item first'>
+                        <div className='item first min-mid'>
                             <img src='./images/010.jpeg' alt='Mendl' />
                         </div>
                         {/* <div className='item second poster'>
                             <img src='./images/011.png' alt='Mendl' />
                         </div> */}
-                        <div className='item fourth poster'>
+                        <div className='item fourth poster min-mid'>
                             <img src='./images/012.png' alt='Mendl' />
                         </div>
 
@@ -163,13 +163,13 @@ const Columns = () => {
                         </button>
 
                         
-                        <div className='item fifth'>
+                        <div className='item fifth min-mid'>
                             <img src='./images/e.jpeg' alt='Mendl' />
                         </div>
                         <div className='item fifth poster'>
                             <img src='./images/014.png' alt='Mendl' />
                         </div>
-                        <div className='item fifth img'>
+                        <div className='item fifth img min'>
                             <img src='./images/015.jpeg' alt='Mendl' />
                         </div>
                     </Slider>
@@ -177,34 +177,34 @@ const Columns = () => {
                 
                 <div className='movil'>
                     <Slider className='column uno' {...settingsAbajo}>
-                    <div className='item first img'>
+                    <div className='item first img min'>
                             <img src='./images/000.jpeg' alt='Mendl' />
                         </div>
                         <div className='item first'>
                             <img src='./images/001.png' alt='Mendl' />
                         </div>
-                        <div className='item first '>
+                        <div className='item first min-mid'>
                             <img src='./images/a.jpeg' alt='Mendl' />
                         </div>
-                        <div className='item second'>
+                        <div className='item second min'>
                             <img src='./images/002.png' alt='Mendl' />
                         </div>
-                        <div className='item second '>
+                        <div className='item second min'>
                             <img src='./images/b.jpeg' alt='Mendl' />
                         </div>
                         <button className='item third' onClick={() => setMenu(!menu)}>
                             <img src='./images/003.png' alt='Mendl' />
                         </button>
-                        <div className='item fourth img'>
+                        <div className='item fourth img min-mid'>
                             <img src='./images/004.jpeg' alt='Mendl' />
                         </div>
-                        <div className='item first'>
+                        <div className='item first min'>
                             <img src='./images/005.png' alt='Mendl' />
                         </div>
                         <div className='item first'>
                             <img src='./images/c.jpeg' alt='Mendl' />
                         </div>
-                        <div className='item '>
+                        <div className='item min-mid'>
                             <img src='./images/006.png' alt='Mendl' />
                         </div>
                         <button className='item third poster' onClick={() => setMenuEn(!menuEn)}>
@@ -212,13 +212,13 @@ const Columns = () => {
                         </button>
                     </Slider>
                     <Slider className='column ' {...settingsArriba}>
-                    <div className='item '>
+                    <div className='item min'>
                             <img src='./images/008.png' alt='Mendl' />
                         </div>
-                        <div className='item'>
+                        <div className='item min-mid'>
                             <img src='./images/d.jpeg' alt='Mendl' />
                         </div>
-                        <div className='item img'>
+                        <div className='item img '>
                             <img src='./images/009.png' alt='Mendl' />
                         </div>
                         <div className='item first'>
@@ -233,10 +233,10 @@ const Columns = () => {
                         <button className='item third poster' onClick={() => setMapa(!mapa)}>
                             <img src='./images/013.png' alt='Mendl' />
                         </button>
-                        <div className='item fifth'>
+                        <div className='item fifth min'>
                             <img src='./images/e.jpeg' alt='Mendl' />
                         </div>
-                        <div className='item fifth img'>
+                        <div className='item fifth img min-mid'>
                             <img src='./images/014.jpeg' alt='Mendl' />
                         </div>
                         <div className='item fifth img'>
@@ -380,7 +380,16 @@ const ColumnsContainer = styled.div`
                 }
             .item {
                 margin-bottom: 300px;
-                
+            }
+            .min {
+                img {
+                    width: 60%;
+                }
+            }
+            .min-mid {
+                img {
+                    width: 80%;
+                }
             }
             .item.first, .item.second {
                 display: flex !important;
