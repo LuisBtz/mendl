@@ -384,6 +384,7 @@ const ColumnsContainer = styled.div`
             .min {
                 img {
                     width: 60%;
+                    margin-left: 40%;
                 }
             }
             .min-mid {
