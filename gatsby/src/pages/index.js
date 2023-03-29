@@ -9,6 +9,10 @@ const IndexPage = () => {
   return(
     <Layout>
       <Contenedor>
+        <div className='seo'>  
+          <h1>Mendl restaurant</h1>
+          <p>Deli Judio, platillos tipicos, bagels, salmon ahumado, vinos naturales, repostería, desayunos en Condesa Ciudad de México.</p>
+        </div>
         <Logo />
         <Columns />
       </Contenedor>
@@ -18,6 +22,10 @@ const IndexPage = () => {
 
 const Contenedor = styled.section`
   position: relative;
+  .seo {
+    color: var(--white);
+    z-index: 1;
+  }
 `
 
 export const Head = () => (

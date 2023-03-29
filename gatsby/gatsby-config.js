@@ -5,10 +5,10 @@ module.exports = {
   siteMetadata: {
     title: `Mendl`,
     siteUrl: `https://www.yourdomain.tld`,
-    description: `Mendl restaurant`,
+    description: `Deli Judio, platillos tipicos, bagels, salmon ahumado, vinos naturales, repostería, desayunos en Condesa Ciudad de México.`,
     twitterUsername: `@mendl`,
     image: `./src/assets/images/screenshot.png`,
-    author: `nevada`
+    author: `mendl`
   },
   plugins: ["gatsby-plugin-styled-components", "gatsby-plugin-image", "gatsby-plugin-sitemap", {
     resolve: 'gatsby-plugin-manifest',
