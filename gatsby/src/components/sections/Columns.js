@@ -49,7 +49,7 @@ const Columns = () => {
                     <div className='container'>
                         <div className='image'>
                             <StaticImage
-                                src="../../assets/images/menuEs.png"
+                                src="../../assets/images/menuEs.jpg"
                                 alt="Menu Mendl"
                                 layout="fullWidth"
                                 style={{ height: "100%", width: "100%" }}
@@ -67,7 +67,7 @@ const Columns = () => {
                     <div className='container'>
                         <div className='image'>
                             <StaticImage
-                                src="../../assets/images/menuEn.png"
+                                src="../../assets/images/menuEn.jpg"
                                 alt="Menu Mendl"
                                 layout="fullWidth"
                                 style={{ height: "100%", width: "100%" }}
@@ -215,12 +215,17 @@ const Columns = () => {
                     <div className='item min'>
                             <img src='./images/008.png' alt='Mendl' />
                         </div>
+                        
                         <div className='item min-mid'>
                             <img src='./images/d.jpeg' alt='Mendl' />
                         </div>
                         <div className='item img '>
                             <img src='./images/009.png' alt='Mendl' />
                         </div>
+                        <button className='item third' onClick={() => setMenu(!menu)}>
+                            <img src='./images/003.png' alt='Mendl' />
+                        </button>
+
                         <div className='item first'>
                             <img src='./images/010.jpeg' alt='Mendl' />
                         </div>
